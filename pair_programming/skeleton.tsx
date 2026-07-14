@@ -4,6 +4,7 @@
 // - Dispara la búsqueda con **debounce** de 300ms después de que el usuario deja de escribir (no en cada tecla)
 // - Si el usuario sigue escribiendo, **cancela** la búsqueda anterior en curso (para no procesar ni mostrar una respuesta que ya no corresponde a lo que hay en el input)
 // - Limpia correctamente los timers/requests pendientes si el componente se desmonta
+// - Los datos se obtienen en con un fetch a /api/cfdis/search?q=<searchTerm>
 
 import { useState, useEffect } from "react";
 
